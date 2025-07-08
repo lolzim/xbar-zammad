@@ -2,7 +2,7 @@
 
 #  <xbar.title>Zammad notifications counter</xbar.title>
 #  <xbar.version>v1.0</xbar.version>
-#  <xbar.author>Lol Zimerli</xbar.author>
+#  <xbar.author>Lol Zimmerli</xbar.author>
 #  <xbar.author.github>lolzim</xbar.author.github>
 #  <xbar.desc>Count zammad notifications and show green 0 if nons, red + counter if more (and beep)</xbar.desc>
 #  <xbar.image></xbar.image>
