@@ -4,11 +4,10 @@ xbar plugin showing Zammad notifications info:
 - ❌ otherwise.
 
 # Requirements
+- xbar (https://xbarapp.com)
 - bash
 - jq (https://jqlang.org/)
 - curl
 
 # xbar
 xbar allows to put info in mac menubar.
-Get xbar at https://xbarapp.com
-
