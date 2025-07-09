@@ -10,7 +10,7 @@
 #  <xbar.abouturl>b</xbar.abouturl>
 
 # vars
-URL='https://ZAMMADFQDN/api/v1/online_notifications'
+URL='https://YOUR_ZAMMAD_FQDN/api/v1/online_notifications'
 TOKEN='YOUR_ZAMMAD_TOKEN'
 
 # API call & work on output
@@ -21,10 +21,11 @@ NUM=`cat /tmp/xbar.zammad.out.jq | wc -l | xargs`
 # Check for number, choosing color & system beep if red
 if [ $NUM -lt 1 ]
 then
-    COLOR='#abffb7'
+    COLOR='✅'
 else
-    COLOR='#ffabab'
+    COLOR='$NUM ❌'
+    say "Zammade"
     echo -en "\007"
 fi
 
-echo "Zammad: $NUM |color=$COLOR"
+echo "Zam $COLOR"
