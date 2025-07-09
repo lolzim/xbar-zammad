@@ -1,5 +1,5 @@
 # xbar-zammad
-xbar plugin showing Zammad notifications info:
+xbar plugin showing Zammad notifications info, updated each 5min:
 - Zam ✅ if none unseen and
 - Zam n ❌ otherwise (n = number of unseen zammad notifications)
 
