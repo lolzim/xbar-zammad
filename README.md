@@ -1,7 +1,7 @@
 # xbar-zammad
 xbar plugin showing Zammad notifications info:
 - ✅ if none unseen and
-- ❌ otherwise.
+- xx ❌ otherwise (xx = number of unseen zammad notifications)
 
 # Requirements
 - xbar (https://xbarapp.com)
