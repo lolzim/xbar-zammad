@@ -23,7 +23,7 @@ if [ $NUM -lt 1 ]
 then
     OUT='✅'
 else
-    OUT='$NUM ❌'
+    OUT="$NUM ❌"
     say "Zammade"
 fi
 
