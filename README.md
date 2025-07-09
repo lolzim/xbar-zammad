@@ -3,7 +3,7 @@ xbar plugin showing Zammad notifications counter
 
 # Requirements
 - bash
-- jq
+- jq (https://jqlang.org/)
 - curl
 
 # xbar
