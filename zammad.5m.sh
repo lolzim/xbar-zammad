@@ -21,11 +21,10 @@ NUM=`cat /tmp/xbar.zammad.out.jq | wc -l | xargs`
 # Check for number, choosing color & system beep if red
 if [ $NUM -lt 1 ]
 then
-    COLOR='✅'
+    OUT='✅'
 else
-    COLOR='$NUM ❌'
+    OUT='$NUM ❌'
     say "Zammade"
-    echo -en "\007"
 fi
 
-echo "Zam $COLOR"
+echo "Zam $OUT"
