@@ -1,5 +1,7 @@
 # xbar-zammad
-xbar plugin showing Zammad notifications info: ✅ if none unseen and ❌ otherwise.
+xbar plugin showing Zammad notifications info:
+- ✅ if none unseen and
+- ❌ otherwise.
 
 # Requirements
 - bash
