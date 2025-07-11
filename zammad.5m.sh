@@ -4,7 +4,7 @@
 #  <xbar.version>v1.0</xbar.version>
 #  <xbar.author>Lol Zimmerli</xbar.author>
 #  <xbar.author.github>lolzim</xbar.author.github>
-#  <xbar.desc>Count zammad notifications and show green 0 if none, red + counter beep if more </xbar.desc>
+#  <xbar.desc>Count zammad notifications and show green emoji if none; red emoji + speech number if more </xbar.desc>
 #  <xbar.image></xbar.image>
 #  <xbar.dependencies></xbar.dependencies>
 #  <xbar.abouturl>b</xbar.abouturl>
@@ -24,7 +24,7 @@ then
     OUT='✅'
 else
     OUT="$NUM ❌"
-    say "Zammade"
+    say "Zammade, $NUM"
 fi
 
 echo "Zam $OUT"
