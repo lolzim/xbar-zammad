@@ -16,11 +16,11 @@ TOKEN='YOUR_ZAMMAD_TOKEN'
 
 # API call & work on output
 curl -s -H "Authorization: Token token=$TOKEN" "$URL" > /tmp/xbar.zammad.out
-cat /tmp/xbar.zammad.out | jq '.[].seen' | grep -v true > /tmp/xbar.zammad.out.jq
-NUM=`cat /tmp/xbar.zammad.out.jq | wc -l | xargs`
+jq '.[].seen' /tmp/xbar.zammad.out | grep -v 'true' > /tmp/xbar.zammad.out.jq || true
+NUM=$(cat /tmp/xbar.zammad.out.jq | wc -l | xargs)
 
 # Check for number, choosing color & system beep if red
-if [ $NUM -lt 1 ]
+if [ "$NUM" -lt 1 ]
 then
     OUT='✅'
 else
