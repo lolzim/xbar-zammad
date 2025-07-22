@@ -1,4 +1,5 @@
 #!/bin/bash
+set -euo pipefail
 
 #  <xbar.title>Zammad notifications counter</xbar.title>
 #  <xbar.version>v1.0</xbar.version>
@@ -14,7 +15,7 @@ URL='https://YOUR_ZAMMAD_FQDN/api/v1/online_notifications'
 TOKEN='YOUR_ZAMMAD_TOKEN'
 
 # API call & work on output
-curl -s -H "Authorization: Token token=$TOKEN" $URL > /tmp/xbar.zammad.out
+curl -s -H "Authorization: Token token=$TOKEN" "$URL" > /tmp/xbar.zammad.out
 cat /tmp/xbar.zammad.out | jq '.[].seen' | grep -v true > /tmp/xbar.zammad.out.jq
 NUM=`cat /tmp/xbar.zammad.out.jq | wc -l | xargs`
 
