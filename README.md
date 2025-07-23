@@ -9,7 +9,7 @@ Plugin showing Zammad notifications info, updated each 5min:
 - jq (https://jqlang.org/)
 - curl
 
-# xbar
-xbar allows to put info in mac menubar:
+# SwiftBar/xbar/BitBar
+SwiftBar/xbar/BitBar allow to put info in mac menubar:
 
 <img width="282" height="25" alt="image" src="https://github.com/user-attachments/assets/2f9f54ed-4350-4b38-8789-45aa351ebe84" />
