@@ -10,4 +10,5 @@ xbar plugin showing Zammad notifications info, updated each 5min:
 - curl
 
 # xbar
-xbar allows to put info in mac menubar.
+xbar allows to put info in mac menubar:
+<img width="282" height="25" alt="image" src="https://github.com/user-attachments/assets/2f9f54ed-4350-4b38-8789-45aa351ebe84" />
